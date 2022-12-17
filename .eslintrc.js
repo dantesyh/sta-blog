@@ -1,20 +1,20 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
-    node: true
+    es2021: true
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    'standard'
+    "plugin:vue/vue3-essential",
+    "standard"
   ],
   overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    sourceType: "module"
   },
-  plugins: ['vue'],
+  plugins: ["vue"],
   rules: {
-    'vue/comment-directive': 'off'
+    semi: [2, "always", { omitLastInOneLineBlock: true }],
+    quotes: [2, "double", { avoidEscape: true, allowTemplateLiterals: false }]
   }
-}
+};
