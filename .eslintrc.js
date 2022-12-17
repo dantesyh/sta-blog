@@ -1,16 +1,22 @@
+/* eslint-disable no-undef */
+
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true
   },
+  parser: "vue-eslint-parser",
   extends: [
     "plugin:vue/vue3-essential",
-    "standard"
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "module",
+    parser: "@typescript-eslint/parser"
   },
   plugins: ["vue"],
   rules: {
