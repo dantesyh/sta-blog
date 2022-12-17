@@ -2,6 +2,14 @@
     "compilerOptions": {
         "forceConsistentCasingInFileNames": true,
         "strict": true,
-        "allowJs": true
-    }
+        "allowJs": true,
+        "outDir": "build",
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "build/**/*"
+    ]
 }
