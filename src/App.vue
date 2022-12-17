@@ -2,15 +2,15 @@
   <HomePage />
 </template>
 <script>
-import HomePage from "./views/HomePage.vue";
+import HomePage from './views/HomePage.vue'
 export default {
-  name: "App",
+  name: 'App',
   data() {
-    return {};
+    return {}
   },
   methods: {},
   components: { HomePage }
-};
+}
 </script>
 <style lang="scss" scoped>
 
